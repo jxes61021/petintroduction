@@ -1,4 +1,6 @@
 <template lang="pug">
-div
-  p(class="text-red-400") 123
+div(class="overflow-hidden")
+  nuxtLayout
+    NuxtPage
+    p(class="text-red-400") 123
 </template>
