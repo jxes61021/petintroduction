@@ -1,11 +1,11 @@
 <template lang="pug">
 div
   Test
-  //- Header
+  Header
   slot
   p(class="text-blue-400") 789
   //- Pet
-  //- Footer
+  Footer
 </template>
 <script>
 export default {
