@@ -3,8 +3,7 @@ div
   Test
   Header
   slot
-  p(class="text-blue-400") 789
-  //- Pet
+  //- p(class="text-blue-400") 789
   Footer
 </template>
 <script>

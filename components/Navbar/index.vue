@@ -59,7 +59,7 @@
         </ul>
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <ul :class="showMenu ? 'flex' : 'hidden' " class="
+        <ul :class="showMenu ? 'flex' : 'hidden'" class="
           flex-col
           mt-8
           mr-4

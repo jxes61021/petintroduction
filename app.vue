@@ -2,5 +2,5 @@
 div(class="overflow-hidden")
   nuxtLayout
     NuxtPage
-    p(class="text-red-400") 123
+    //- p(class="text-red-400") 123
 </template>
