@@ -1,8 +1,8 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    './src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
+    './components/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'
   ],
   theme: {
     extend: {

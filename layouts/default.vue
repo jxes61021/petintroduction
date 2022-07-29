@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  Test
+  //- Test
   Header
   slot
   //- p(class="text-blue-400") 789
