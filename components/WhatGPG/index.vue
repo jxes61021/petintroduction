@@ -37,7 +37,7 @@
                 <div class="prevArrow flex items-center justify-center">
                     <img src="@/assets/left.png" alt="">
                 </div>
-                <div class="nextArrow flex items-center justify-center ml-8">
+                <div class="nextArrow flex items-center justify-center ml-4 md:ml-8">
                   <img src="@/assets/right.png" alt="" class="">
                 </div>
               </div>

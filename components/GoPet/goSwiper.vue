@@ -1,5 +1,5 @@
 <template>
-        <div class="flex justify-start text-[40px] font-black mb-4 ml-20">挖了可以幹嘛</div>
+        <div class="text-[40px] font-black mb-4 ml-0 md:ml-20 text-center md:text-left">挖了可以幹嘛</div>
         <swiper 
             :navigation="{
                     nextEl: '.nextArrow',
@@ -27,11 +27,11 @@
                         </div>
                     </div>
                 </swiper-slide>
-                <div class="w-10/12 md:w-7/12 h-auto flex items-center justify-between md:justify-between bottom-[210px]">
-                    <div class="prevArrow flex items-center justify-center">
+                <div class="w-full md:w-7/12 h-auto flex items-center justify-between md:justify-between bottom-[70px] md:bottom-[210px]">
+                    <div class="prevArrow flex items-center justify-center ml-2">
                         <img src="@/assets/left.png" alt="">
                     </div>
-                    <div class="nextArrow flex items-center justify-center ">
+                    <div class="nextArrow flex items-center justify-center mr-2">
                         <img src="@/assets/right.png" alt="" class="">
                     </div>
                 </div>

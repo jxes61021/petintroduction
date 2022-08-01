@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class='bg-[#1F1631] h-auto')
   div(class='md:w-[1220px] md:flex-row w-full m-auto flex justify-around flex-col')
-    div(class='w-10/12 md:w-6/12 md:py-24 py-12.flex.flex-col.m-auto')
+    div(class='w-10/12 md:w-6/12 md:py-24 py-12 flex flex-col m-auto')
       div(class='md:w-8/12 w-full m-auto')
         img(src='./image/i_logo_gpg.png' alt='' class='w-4/12 md:w-auto mb-6 m-auto')
         div(class="flex flex-row justify-center")

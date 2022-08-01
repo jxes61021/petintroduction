@@ -84,14 +84,12 @@
   </div>
 </template>
 <script>
+import { ref } from 'vue';
 export default {
   setup() {
     let showMenu = ref(false);
     const toggleNav = () => (showMenu.value = !showMenu.value);
-    return { 
-      showMenu, 
-      toggleNav,
-    };
+    return { showMenu, toggleNav };
   },
 };
 </script>

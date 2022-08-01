@@ -1,5 +1,5 @@
 <template>
-    <div class="relative py-32 md:py-0 bg-white text-black">
+    <div class="relative py-2 md:py-0 bg-white text-black">
         <div class="w-11/12 md:w-[1220px] m-auto text-center pt-6 md:pt-0">
             <div id="menu-5" class="flex justify-center text-[40px] font-black mb-4">如何取得GPG礦寵</div>
             <div class="text-center text-[22px]  m-auto font-semibold mb-10">礦寵怎麼玩:成為寵物大師</div>
@@ -57,12 +57,12 @@
                       <img src="@/assets/left.png" alt="">
                   </div>
                 </div> -->
-                <div class="w-full md:w-[60%] h-auto flex items-center justify-center md:justify-end bottom-[12vh] md:bottom-[8vh]">
+                <div class="w-full md:w-[60%] h-auto flex items-center justify-center md:justify-end bottom-[40px] md:bottom-[60px]">
                     <div class="prevArrow flex items-center justify-center">
                         <img src="@/assets/left.png" alt="">
                     </div>
                     <div class="nextArrow flex items-center justify-center ml-4">
-                    <img src="@/assets/right.png" alt="" class="">
+                        <img src="@/assets/right.png" alt="" class="">
                     </div>
                 </div>
             </div>

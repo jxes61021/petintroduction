@@ -4,9 +4,9 @@
             <div id="menu-4" class="text-[40px] mb-10 font-bold">GPG神遊礦寵</div>
         </div>
         <div class="w-full md:w-[900px] m-auto justify-center font-noto relative">
-            <ul class="bg-[#251848] w-10/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3">
+            <ul class="bg-[#251848] w-11/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3">
                 <li class="flex-1" @click="changeStatus(true)">
-                    <a href="#tabs-home3"
+                    <a
                     :class="SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold' : 'text-[#AE89D8]'"
                     class="
                         text-center
@@ -24,7 +24,7 @@
                         " id="tabs-home-tab3">特色介紹</a>
                 </li>
                 <li class="flex-1" @click="changeStatus(false)">
-                    <a href="#tabs-profile3"
+                    <a
                     :class="!SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold ' : 'text-[#AE89D8] '"
                     class="
                         text-center
@@ -48,7 +48,7 @@
                 <!--!!!!!!!-->
                 <div v-if="SwiperStatus" class="tab-pane fade show active w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
                     <div class=" md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
-                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
+                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-2%] md:left-[-3%]">
                             <img src="@/assets/left.png" alt="">
                         </div>
                         <swiper
@@ -90,7 +90,7 @@
                                 <img src="./image/left.png" alt="">
                             </div>
                         </div> -->
-                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-3%]">
+                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-2%] md:right-[-3%]">
                             <img src="@/assets/right.png" alt="" class="">
                         </div>
                     </div>
@@ -99,7 +99,7 @@
                 <!--!!!!!!!-->
                 <div v-else class="tab-pane fade w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
                     <div class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
-                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
+                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-2%] md:left-[-3%]">
                             <img src="@/assets/left.png" alt="">
                         </div>
                         <swiper
@@ -140,7 +140,7 @@
                                 <img src="./image/left.png" alt="">
                             </div>
                         </div> -->
-                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-3%]">
+                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-2%] md:right-[-3%]">
                             <img src="@/assets/right.png" alt="" class="">
                         </div>
                         <!-- <div class="w-10/12 md:w-full h-auto flex items-center justify-between md:justify-between bottom-[210px]">

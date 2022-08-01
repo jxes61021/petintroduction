@@ -37,7 +37,7 @@
                 class="mySwiper relative p-6"
                 >
                     <swiper-slide v-for="item of list" :key="item.id">
-                        <div class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 -left-10 md:left-0" :class="item.style">
+                        <div class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 md:left-0" :class="item.style">
                             <p class="text-[22px] font-bold mb-4">{{ item.title }}</p>
                             <p class="mb-16">{{ item.message }}</p>
                             <!-- <div class=" absolute bottom-0 w-full">
