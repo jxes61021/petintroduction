@@ -2,17 +2,18 @@
         <div class="flex justify-start text-[40px] font-black mb-4 ml-20">挖了可以幹嘛</div>
         <swiper 
             :navigation="{
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',}"
+                    nextEl: '.nextArrow',
+                    prevEl: '.prevArrow',}"
             :pagination="{
             clickable: true,}"
-            :observer=true
+            :observer="true"
             :observeParents= true
-            :parallax=true
+            :parallax="true"
+            :disabledClass="true"
             class="mySwiper relative pd-0 md:p-6"
             >
                 <swiper-slide v-for="item of list" :key="item.id">
-                    <div class="bg-[#005cd471] w-10/12 md:w-5/12 h-full p-6 rounded-xl  relative md:left-14 m-auto md:m-0" >
+                    <div class="bg-[#005cd471] w-10/12 md:w-5/12 h-full p-6 rounded-xl  relative md:left-[68px] m-auto md:m-0 flex" >
                         <div >
                             <div class="text-[22px] mb-6 font-black pt-4">{{ item.title }}</div>
                             <div class="mb-6">{{ item.message1 }}</div>
@@ -26,14 +27,28 @@
                         </div>
                     </div>
                 </swiper-slide>
-                <div id="goswiper">
+                <div class="w-10/12 md:w-7/12 h-auto flex items-center justify-between md:justify-between bottom-[210px]">
+                    <div class="prevArrow flex items-center justify-center">
+                        <img src="@/assets/left.png" alt="">
+                    </div>
+                    <div class="nextArrow flex items-center justify-center ">
+                        <img src="@/assets/right.png" alt="" class="">
+                    </div>
+                </div>
+                <!-- <div class="prevArrow flex items-center justify-center md:left-[0%] top-[89%] md:top-[50%]">
+                    <img src="@/assets/left.png" alt="">
+                </div>
+                <div class="nextArrow flex items-center justify-center md:right-[-41%] top-[89%] md:top-[50%] right-[2%]">
+                    <img src="@/assets/right.png" alt="" class="">
+                </div> -->
+                <!-- <div id="goswiper">
                     <div class="btn-ani swiper-button-next md:right-[41%] top-[89%] md:top-[50%] right-[2%]">
                         <img src="@/assets/right.png" alt="" class="ml-2">
                     </div>
                     <div class="btn-ani swiper-button-prev md:left-[0%] top-[89%] md:top-[50%] ">
                         <img src="@/assets/left.png" alt="">
                     </div>
-                </div>
+                </div> -->
         </swiper>
        
 </template>
@@ -109,6 +124,24 @@ export default {
     font-size: 1rem;
     font-weight: 900;
   }
-
+.nextArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.prevArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.swiper-button-disabled {
+  opacity: 0.6
+}
 
 </style>

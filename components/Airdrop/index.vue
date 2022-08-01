@@ -1,7 +1,7 @@
 <template>
 
-  <div class=" relative -top-[200px] md:-top-[350px] bg-white">
-    <div class="bg-part104 w-full bg-cover h-[400px] absolute top-0 ">
+  <div class=" relative -top-[200px] md:-top-[350px] bg-[#F2EBF2]">
+    <div class="bg-part104 w-full bg-cover h-[400px] absolute top-0 bg-[#F2EBF2]">
         <div class="relative w-10/12 h-full hidden md:block ">
             <img src="./image/m2_304-2.png" alt="" class="absolute right-[15%] scale-110 z-1">
             <img src="./image/m2_302.png" alt="" class="absolute right-[5%] bottom-0 z-0">

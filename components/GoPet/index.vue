@@ -13,8 +13,8 @@
         
     </div>
 
-    <div class="w-full h-[600px] relative -top-52">
-         <div class="w-full md:w-[1220px] m-auto text-center ">
+    <div class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]">
+         <div class="w-full md:w-[1220px] m-auto text-center text-black bg-[#F2EBF2]">
             <div id="menu-3" class="flex justify-center text-[40px] font-black mb-8">如何賺更多？</div>
             <div class="flex justify-center w-11/12 m-auto ">
                 <swiper
@@ -27,21 +27,17 @@
                 }"
                 :spaceBetween="30"
                 :navigation="{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',}"
+                    nextEl: '.nextArrow',
+                    prevEl: '.prevArrow',}"
                 :pagination="{
                 clickable: true,}"
-                :observer=true
-                :observeParents= true
-                :parallax=true
+                :observer="true"
+                :observeParents="true"
+                :parallax="true"
                 class="mySwiper relative p-6"
                 >
-                    <swiper-slide
-                        v-for="item of list" :key="item.id"
-                        class="flex rounded-2xl h-auto flex-col p-10  text-white mb-24 relative -left-10 md:left-0"
-                        :class="item.style"
-                    >
-                        <div class="h-full relative ">
+                    <swiper-slide v-for="item of list" :key="item.id">
+                        <div class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 -left-10 md:left-0" :class="item.style">
                             <p class="text-[22px] font-bold mb-4">{{ item.title }}</p>
                             <p class="mb-16">{{ item.message }}</p>
                             <!-- <div class=" absolute bottom-0 w-full">
@@ -51,14 +47,22 @@
                             </div> -->
                         </div>
                     </swiper-slide>
-                    <div id="gopet" class="hidden md:block">
+                    <div class="w-full md:w-full h-auto flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]">
+                        <div class="prevArrow flex items-center justify-center">
+                            <img src="@/assets/left.png" alt="">
+                        </div>
+                        <div class="nextArrow flex items-center justify-center ml-8">
+                        <img src="@/assets/right.png" alt="" class="">
+                        </div>
+                    </div>
+                    <!-- <div id="gopet" class="hidden md:block">
                         <div class="swiper-button-next md:right-[43%] md:top-[82%]">
                             <img src="./image/right.png" alt="" class="ml-2">
                         </div>
                         <div class="swiper-button-prev md:left-[43%] md:top-[82%] ">
                             <img src="./image/left.png" alt="">
                         </div>
-                    </div>
+                    </div> -->
                 </swiper>
                 
             </div>
@@ -137,6 +141,26 @@ export default {
     font-size: 1rem;
     font-weight: 900;
   }
+
+.nextArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.prevArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.swiper-button-disabled {
+  opacity: 0.6
+}
 
 
 </style>
