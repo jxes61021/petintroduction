@@ -10,9 +10,9 @@
                         prevEl: '.swiper-button-prev',}"
                     :pagination="{
                         clickable: true,}"
-                    :observer=true
-                    :observeParents= true
-                    :parallax=true
+                    :observer="true"
+                    :observeParents="true"
+                    :parallax="true"
                     class="mySwiper"
                     >
                         <swiper-slide>
@@ -72,6 +72,12 @@ export default {
     SwiperSlide,
   },
   setup() {
+    // const list = ref([
+    //   { id: 2, url: new URL('./image/m2_102.png', import.meta.url), message: '國民挖礦運動正夯！人人都想賺取額外被動收入，但要怎麼賺呢？'},
+    //   { id: 1, url: new URL('./image/m2_103.png', import.meta.url), message: 'GPG神遊平台隆重推出：是虛擬寵物也是雲端礦機的 GameFi 遊戲《GPG神遊礦寵 GPG Mining Pet》' },
+    //   { id: 3, url: new URL('./image/m2_104.png', import.meta.url), message: '你不需要擁有加密錢包、也不需要先投資加密貨幣、更不用準備高端電腦設備，只要智慧型手機在手，就能隨時上線挖礦與遊玩，輕鬆暢遊元宇宙！' },
+    //   { id: 4, url: new URL('./image/m2_105.png', import.meta.url), message: '登入遊戲，就能擁有自己的專屬限定NFT礦寵囉！輸入手機號碼，三秒就能註冊完成。還不趕快加入！' },
+    // ])
     return{
       Swiper,
       SwiperSlide,
@@ -91,6 +97,9 @@ export default {
 .nav-tabs .nav-link{
     color:#AE89D8!important; 
 }
+
+</style>
+<style>
 
 #howgpg .swiper-button-next {
     background: #8E3FE8;

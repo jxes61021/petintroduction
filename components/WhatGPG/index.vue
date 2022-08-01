@@ -7,15 +7,16 @@
           <div class="absolute w-full m-auto" > 
             <swiper 
                 id="swiper1"
-                :autoplay=true
+                :autoplay="true"
                 :navigation="{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',}"
+                    nextEl: '.nextArrow',
+                    prevEl: '.prevArrow',}"
                 :pagination="{
                     clickable: true,}"
-                :observer=true
-                :observeParents= true
-                :parallax=true
+                :observer="true"
+                :observeParents="true"
+                :parallax="true"
+                :disabledClass="true"
                 class="mySwiper">
               <swiper-slide v-for="item of list" :key="item.id">
                 <div class="flex justify-center text-center py-2 md:py-9 flex-col md:flex-row">
@@ -32,14 +33,22 @@
                   </div>
                 </div>
               </swiper-slide>
-              <div id="whatgpg" class="">
+              <div class="w-full md:w-[68%] h-auto flex items-center justify-center md:justify-end bottom-[12vh] md:bottom-[8vh]">
+                <div class="prevArrow flex items-center justify-center">
+                    <img src="@/assets/left.png" alt="">
+                </div>
+                <div class="nextArrow flex items-center justify-center ml-8">
+                  <img src="@/assets/right.png" alt="" class="">
+                </div>
+              </div>
+              <!-- <div id="whatgpg" class="">
                   <div class="swiper-button-next md:right-[33%] top-[90%] right-[30%]">
                       <img src="@/assets/right.png" alt="" class="ml-2">
                   </div>
                   <div class="swiper-button-prev md:left-[50%] top-[90%] left-[30%]">
                       <img src="@/assets/left.png" alt="">
                   </div>
-              </div>
+              </div> -->
             </swiper>
           </div>
           <div class="absolute w-full top-32  right-0 md:right-10">
@@ -87,6 +96,7 @@ export default {
 }
 </script>
 
+
 <style>
 #swiper1 .nav-tabs .nav-link.active{
     color:white!important; 
@@ -127,5 +137,23 @@ export default {
     font-weight: 900;
   }
 
-
+.nextArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.prevArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.swiper-button-disabled {
+  opacity: 0.6
+}
 </style>

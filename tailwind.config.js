@@ -2,7 +2,7 @@ module.exports = {
   content: [
     "./index.html",
     "./components/**/*.{vue,js,ts,jsx,tsx}",
-    './components/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'
+    './components/**/*.{html,js}'
   ],
   theme: {
     extend: {
