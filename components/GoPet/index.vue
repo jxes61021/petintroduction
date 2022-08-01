@@ -111,37 +111,6 @@ export default {
 </script>
 
 <style>
-#gopet .swiper-button-next {
-    background: #8E3FE8;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-#gopet .swiper-button-prev {
-    background: #8E3FE8;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    left: 43%;
-    top: 82%;
-    z-index: 99;
-}
-#gopet .swiper-button-next:after {
-    color: #fff;
-    display: none;
-}
-#gopet .swiper-button-prev:after {
-    color: #fff;
-    display: none;
-}
-#gopet .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 1rem;
-    font-weight: 900;
-  }
-
 .nextArrow {
     background: #8E3FE8;
     width: 3.5rem;

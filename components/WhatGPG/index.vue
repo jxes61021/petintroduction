@@ -98,45 +98,6 @@ export default {
 
 
 <style>
-#swiper1 .nav-tabs .nav-link.active{
-    color:white!important; 
-    background: rgb(110,78,242);
-    background: linear-gradient(90deg, rgba(110,78,242,1) 0%, rgba(255,64,96,1) 100%);
-    
-}
-#swiper1 .nav-tabs .nav-link{
-    color:#AE89D8!important; 
-}
-
-#swiper1 #whatgpg .swiper-button-next {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-#swiper1 #whatgpg .swiper-button-prev {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-#swiper1 #whatgpg .swiper-button-next:after {
-    color: #fff;
-    display: none;
-}
-#swiper1 #whatgpg .swiper-button-prev:after {
-    color: #fff;
-    display: none;
-}
-#swiper1 #whatgpg .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 1rem;
-    font-weight: 900;
-  }
-
 .nextArrow {
     background: #8E3FE8;
     width: 3.5rem;

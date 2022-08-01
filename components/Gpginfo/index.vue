@@ -7,7 +7,7 @@
             <ul class="bg-[#251848] w-10/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3">
                 <li class="flex-1" @click="changeStatus(true)">
                     <a href="#tabs-home3"
-                    :class="SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold' : 'nav-link uppercase'"
+                    :class="SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold' : 'text-[#AE89D8]'"
                     class="
                         text-center
                         w-11/12 
@@ -25,7 +25,7 @@
                 </li>
                 <li class="flex-1" @click="changeStatus(false)">
                     <a href="#tabs-profile3"
-                    :class="!SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold ' : 'nav-link uppercase '"
+                    :class="!SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold ' : 'text-[#AE89D8] '"
                     class="
                         text-center
                         w-11/12 
@@ -327,48 +327,6 @@ export default {
 </script>
 
 <style>
-.nav-tabs .nav-link.active{
-    color:white!important; 
-    background: rgb(110,78,242);
-    background: linear-gradient(90deg, rgba(110,78,242,1) 0%, rgba(255,64,96,1) 100%);
-    
-}
-.nav-tabs .nav-link{
-    color:#AE89D8!important; 
-}
-
-</style>
-<style>
-
-#gpginfo .swiper-button-next {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-#gpginfo .swiper-button-prev {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-#gpginfo .swiper-button-next:after {
-    color: #fff;
-    display: none;
-}
-#gpginfo .swiper-button-prev:after {
-    color: #fff;
-    display: none;
-}
-#gpginfo .swiper-button-next:after, .swiper-button-prev:after{
-    font-size: 1rem;
-    font-weight: 900;
-  }
-
 .nextArrow {
     background: #8E3FE8;
     width: 3.5rem;
