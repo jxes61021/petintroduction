@@ -6,13 +6,14 @@
             <div class="h-auto relative">
                 <swiper 
                     :navigation="{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',}"
+                        nextEl: '.nextArrow',
+                        prevEl: '.prevArrow',}"
                     :pagination="{
                         clickable: true,}"
                     :observer="true"
                     :observeParents="true"
                     :parallax="true"
+                    :disabledClass="true"
                     class="mySwiper"
                     >
                         <swiper-slide>
@@ -48,14 +49,22 @@
                             </div>
                         </swiper-slide>
                 </swiper>
-                <div id="howgpg">
+                <!-- <div id="howgpg">
                   <div class="swiper-button-next btn-ani md:right-[40%] md:top-[90%] right-[32%] top-[98%]">
                       <img src="@/assets/right.png" alt="" class="ml-2">
                   </div>
                   <div class="swiper-button-prev btn-ani md:left-[50%] md:top-[90%] left-[32%] top-[98%]">
                       <img src="@/assets/left.png" alt="">
                   </div>
-              </div>
+                </div> -->
+                <div class="w-full md:w-[60%] h-auto flex items-center justify-center md:justify-end bottom-[12vh] md:bottom-[8vh]">
+                    <div class="prevArrow flex items-center justify-center">
+                        <img src="@/assets/left.png" alt="">
+                    </div>
+                    <div class="nextArrow flex items-center justify-center ml-4">
+                    <img src="@/assets/right.png" alt="" class="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -124,5 +133,23 @@ export default {
     font-weight: 900;
   }
 
-
+.nextArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.prevArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.swiper-button-disabled {
+  opacity: 0.6
+}
 </style>
