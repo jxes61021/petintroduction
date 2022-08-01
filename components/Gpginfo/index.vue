@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gpginfo h-auto md:h-[850px] bg-cover relative pb-36 md:pb-0">
+    <div class="bg-gpginfo h-auto md:h-[850px] bg-cover relative pb-36 md:pb-0 text-black">
         <div class="w-10/12 md:w-[1220px] justify-center text-center m-auto ">
             <div id="menu-4" class="text-[40px] mb-10 font-bold">GPG神遊礦寵</div>
         </div>
@@ -51,12 +51,16 @@
             </ul>
             <div class="tab-content relative" id="tabs-tabContent3">
                 <!--特色介紹-->
-                <div class="tab-pane fade show active w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
+                <!--!!!!!!!-->
+                <div v-if="false" class="tab-pane fade show active w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
                     <div class=" md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
+                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
+                            <img src="@/assets/left.png" alt="">
+                        </div>
                         <swiper
                             :navigation="{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',}"
+                                nextEl: '.nextArrow',
+                                prevEl: '.prevArrow',}"
                             :pagination="{
                                 clickable: true,}"
                             :observer="true"
@@ -84,23 +88,30 @@
                             </swiper-slide>
                             
                         </swiper>
-                        <div id="gpginfo">
+                        <!-- <div id="gpginfo">
                             <div class="swiper-button-next md:bottom-[83%] md:right-[0%] right-[0%] bottom-[0%] ">
                                 <img src="./image/right.png" alt="" class="ml-2">
                             </div>
                             <div class="swiper-button-prev md:left-[0%] md:bottom-[83%] left-[0%] bottom-[0%]">
                                 <img src="./image/left.png" alt="">
                             </div>
+                        </div> -->
+                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-3%]">
+                            <img src="@/assets/right.png" alt="" class="">
                         </div>
                     </div>
                 </div>
                 <!--遊戲系統-->
-                <div class="tab-pane fade w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
+                <!--!!!!!!!-->
+                <div v-if="true" class="tab-pane fade w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
                     <div class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
+                        <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
+                            <img src="@/assets/left.png" alt="">
+                        </div>
                         <swiper
                             :navigation="{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',}"
+                                nextEl: '.nextArrow',
+                                prevEl: '.prevArrow',}"
                             :pagination="{
                                 clickable: true,}"
                             :observer="true"
@@ -127,14 +138,25 @@
                                 </div>
                             </swiper-slide>
                         </swiper>
-                         <div id="gpginfo">
+                        <!-- <div id="gpginfo">
                             <div class="swiper-button-next md:bottom-[83%] md:right-[0%] right-[0%] bottom-[0%] ">
                                 <img src="./image/right.png" alt="" class="ml-2">
                             </div>
                             <div class="swiper-button-prev md:left-[0%] md:bottom-[83%] left-[0%] bottom-[0%]">
                                 <img src="./image/left.png" alt="">
                             </div>
+                        </div> -->
+                        <div class="absolute nextArrow flex items-center justify-center top-1/2 right-[-3%]">
+                            <img src="@/assets/right.png" alt="" class="">
                         </div>
+                        <!-- <div class="w-10/12 md:w-full h-auto flex items-center justify-between md:justify-between bottom-[210px]">
+                            <div class="prevArrow flex items-center justify-center">
+                                <img src="@/assets/left.png" alt="">
+                            </div>
+                            <div class="nextArrow flex items-center justify-center ">
+                                <img src="@/assets/right.png" alt="" class="">
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -346,6 +368,26 @@ export default {
     font-size: 1rem;
     font-weight: 900;
   }
+
+.nextArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.prevArrow {
+    background: #8E3FE8;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 999px;
+    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+    z-index: 99;
+}
+.swiper-button-disabled {
+  opacity: 0.6
+}
 
 
 </style>
