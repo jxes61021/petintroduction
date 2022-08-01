@@ -4,55 +4,49 @@
             <div id="menu-4" class="text-[40px] mb-10 font-bold">GPG神遊礦寵</div>
         </div>
         <div class="w-full md:w-[900px] m-auto justify-center font-noto relative">
-            <ul class="bg-[#251848] w-10/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3"
-                role="tablist">
-                <li class="nav-item flex-1" role="presentation">
-                    <a href="#tabs-home3" class="
+            <ul class="bg-[#251848] w-10/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3">
+                <li class="flex-1" @click="changeStatus(true)">
+                    <a href="#tabs-home3"
+                    :class="SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold' : 'nav-link uppercase'"
+                    class="
                         text-center
                         w-11/12 
-                        font-bold
                         rounded-full
-                        nav-link
                         m-auto
                         block
-                        text-xs
                         leading-tight
-                        uppercase
                         text-[22px]
                         px-5
                         py-3
                         my-2
                         hover:border-transparent hover:bg-gray-100
                         focus:border-transparent
-                        active
-                        " id="tabs-home-tab3" data-bs-toggle="pill" data-bs-target="#tabs-home3" role="tab"
-                                aria-controls="tabs-home3" aria-selected="true">特色介紹</a>
+                        " id="tabs-home-tab3">特色介紹</a>
                 </li>
-                <li class="nav-item flex-1" role="presentation">
-                    <a href="#tabs-profile3" class="
+                <li class="flex-1" @click="changeStatus(false)">
+                    <a href="#tabs-profile3"
+                    :class="!SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold ' : 'nav-link uppercase '"
+                    class="
                         text-center
                         w-11/12 
                         rounded-full
-                        nav-link
                         m-auto
                         block
                         font-medium
                         text-[22px]
                         leading-tight
-                        uppercase
                         px-5
                         py-3
                         my-2
                         hover:border-transparent hover:bg-gray-100
                         focus:border-transparent
-                        " id="tabs-profile-tab3" data-bs-toggle="pill" data-bs-target="#tabs-profile3" role="tab"
-                                aria-controls="tabs-profile3" aria-selected="false">遊戲系統</a>
+                        " id="tabs-profile-tab3" >遊戲系統</a>
                 </li>
             </ul>
             <div class="tab-content relative" id="tabs-tabContent3">
                 <!--特色介紹-->
                 <!--!!!!!!!-->
-                <div v-if="false" class="tab-pane fade show active w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
+                <div v-if="SwiperStatus" class="tab-pane fade show active w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3">
                     <div class=" md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
                         <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
                             <img src="@/assets/left.png" alt="">
@@ -103,7 +97,7 @@
                 </div>
                 <!--遊戲系統-->
                 <!--!!!!!!!-->
-                <div v-if="true" class="tab-pane fade w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
+                <div v-else class="tab-pane fade w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3">
                     <div class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4">
                         <div class="absolute prevArrow flex items-center justify-center top-1/2 left-[-3%]">
                             <img src="@/assets/left.png" alt="">
@@ -177,6 +171,10 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const SwiperStatus = ref(true)
+    const changeStatus = (status) => {
+        SwiperStatus.value = status
+    }
     // const list = ref([
     //     {
     //         id: 1,  message: '蒐集到了各種NFT礦寵後，除了自己培養、收藏、挖礦以外，還能做什麼呢？遊戲內有競拍系統，除了能進行道具競拍以外，你心愛的NFT礦寵也能在遊戲內進行買賣和交易喔！',
@@ -321,6 +319,8 @@ export default {
       SwiperCore,
       list,
       list2,
+      SwiperStatus,
+      changeStatus,
     }
   }
 }
