@@ -7,7 +7,9 @@ div
     WhatGPG
     div(class="absolute bg-part101 w-full bottom-0 h-[380px] bg-no-repeat z-0 bg-cover")
   WhyGPG
-  div(class="bg-part102 w-full bottom-0 h-[380px] bg-no-repeat z-0 bg-cover")
+  div(class="bg-part102 w-full bottom-0 h-[380px] bg-no-repeat z-0 bg-cover bg-white")
   HowGPG
+  div(class="bg-part103 w-full bg-cover h-[100px] md:h-[330px] bg-[#3577DE] flex justify-end")
+    img(src="./image/m2_250.png" alt="" class="w-[472px] h-[439px] z-10 bottom-[15vh] right-[80px]")
   GoPet
 </template>

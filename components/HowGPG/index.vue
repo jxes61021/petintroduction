@@ -1,5 +1,5 @@
 <template>
-    <div class="relative py-32 md:py-0">
+    <div class="relative py-32 md:py-0 bg-white text-black">
         <div class="w-11/12 md:w-[1220px] m-auto text-center pt-6 md:pt-0">
             <div id="menu-5" class="flex justify-center text-[40px] font-black mb-4">如何取得GPG礦寵</div>
             <div class="text-center text-[22px]  m-auto font-semibold mb-10">礦寵怎麼玩:成為寵物大師</div>
@@ -72,12 +72,6 @@ export default {
     SwiperSlide,
   },
   setup() {
-    // const list = ref([
-    //   { id: 2, url: new URL('./image/m2_102.png', import.meta.url), message: '國民挖礦運動正夯！人人都想賺取額外被動收入，但要怎麼賺呢？'},
-    //   { id: 1, url: new URL('./image/m2_103.png', import.meta.url), message: 'GPG神遊平台隆重推出：是虛擬寵物也是雲端礦機的 GameFi 遊戲《GPG神遊礦寵 GPG Mining Pet》' },
-    //   { id: 3, url: new URL('./image/m2_104.png', import.meta.url), message: '你不需要擁有加密錢包、也不需要先投資加密貨幣、更不用準備高端電腦設備，只要智慧型手機在手，就能隨時上線挖礦與遊玩，輕鬆暢遊元宇宙！' },
-    //   { id: 4, url: new URL('./image/m2_105.png', import.meta.url), message: '登入遊戲，就能擁有自己的專屬限定NFT礦寵囉！輸入手機號碼，三秒就能註冊完成。還不趕快加入！' },
-    // ])
     return{
       Swiper,
       SwiperSlide,

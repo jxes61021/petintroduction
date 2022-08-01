@@ -1,10 +1,10 @@
 <template>
     <div class="relative bg-mogopet md:bg-gopet h-auto bg-cover text-white text-noto bg-top bg-no-repeat pb-[300px]">
-        <div class="bg-part103 w-full bg-cover h-[100px] md:h-[330px] relative -top-2">
+        <!-- <div class="bg-part103 w-full bg-cover h-[100px] md:h-[330px] relative -top-2">
             <div class="w-11/12 hidden md:block">
                 <img src="./image/m2_250.png" alt="" class=" absolute right-20 bottom-0 ">
             </div>
-        </div>
+        </div> -->
         
         <div class="bg-partm2 w-full bg-cover h-[400px] md:h-[800px] absolute bottom-0 z-0"></div>
         <div class="w-full md:w-[800px] m-auto pb-18 md:pb-44 pt-16  relative top-0 z-1">
