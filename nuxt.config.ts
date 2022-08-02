@@ -10,4 +10,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['swiper', '@nuxtjs/tailwindcss']
   },
+  app:{
+    baseURL:'./'
+  }
 })
