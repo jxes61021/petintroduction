@@ -1,5 +1,5 @@
 <template lang="pug">
-div
+div(class="bg-[#F2EBF2]")
   div(class="w-full bg-infoImg overflow-hidden relative bg-x-repeat")
     div(class="w-11/12 md:w-[820px] m-auto pt-4 pb-4 z-10")
       img(src="./image/info01.png" class="my-10 hidden md:block")

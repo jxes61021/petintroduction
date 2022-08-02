@@ -6,5 +6,12 @@ export default defineNuxtConfig({
   css: ['@/assets/base.css'],
   tailwindcss: {
     exposeConfig: true
-  }
+  },
+  // target: 'static',
+  // router: {
+  //   base: '/'
+  // },
+  build: {
+    transpile: ['swiper', '@nuxtjs/tailwindcss']
+  },
 })
