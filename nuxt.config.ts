@@ -7,10 +7,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true
   },
-  // target: 'static',
-  // router: {
-  //   base: '/'
-  // },
   build: {
     transpile: ['swiper', '@nuxtjs/tailwindcss']
   },
