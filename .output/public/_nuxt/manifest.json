@@ -1,0 +1,124 @@
+{
+  "node_modules/nuxt/dist/app/entry.mjs": {
+    "file": "entry-24b21f59.mjs",
+    "src": "node_modules/nuxt/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/index.vue",
+      "virtual:nuxt:/Users/jxes6102/Documents/code/hub/eventpage/petintroduction/.nuxt/error-component.mjs",
+      "layouts/default.vue"
+    ],
+    "css": [
+      "entry.37979810.css"
+    ],
+    "assets": [
+      "m2_102.563cd572.png",
+      "m2_103.88d1d4bd.png",
+      "m2_104.da135b27.png",
+      "m2_105.8f19e61d.png",
+      "m2_101.2daa208d.png",
+      "m2_201.8801e303.png",
+      "m2_202.9448f3d6.png",
+      "m2_203.1053c539.png",
+      "m2_204.26fc74ab.png",
+      "m2_205.225d08b6.png",
+      "m2_gif101.99dbeda0.gif",
+      "m2_gif102.465c8519.jpg",
+      "info01.5da5ec72.png",
+      "m2mo_event01.05a84139.jpg",
+      "m2_250.859e6518.png",
+      "m2_304-2.fac08135.png",
+      "m2_302.57d0dc3c.png",
+      "m2_304.7bd3e0c2.png",
+      "m2_306.89a004bc.jpg",
+      "m2_307.ac6812ab.jpg",
+      "m2_308.17de6eb2.jpg",
+      "m2_309.e1b56664.jpg",
+      "m2_310.362470ad.jpg",
+      "m2_321.4fdf4488.jpg",
+      "m2_322.1f4de9e0.jpg",
+      "m2_323.aaab7f48.jpg",
+      "m2_324.700860d2.jpg",
+      "m2_325.fe77a16a.jpg",
+      "m2_326.e331c6ae.jpg",
+      "m2_404.3e484f4a.png",
+      "m2_403.8a0d48d9.png",
+      "m2_405.e81e883d.png",
+      "m2_close.e0589bc5.svg",
+      "bg_part104.ae649f3e.png",
+      "bg_part105.dd27b322.png",
+      "m2mo_islandbg.aefa03d8.jpg",
+      "m2_303.73644800.png",
+      "m2_bg002.e53d8fd5.jpg",
+      "bg_part106.8b20fae0.png",
+      "m2mo_topbg.1ab16b12.jpg",
+      "img03_pc.22df6aa0.png",
+      "bg_part101.9151dad3.png",
+      "bg_part102.691302fa.png",
+      "bg_part103.dc28ceb2.png",
+      "videobg.7d89539f.png",
+      "bg_part107.7e6e0685.png",
+      "m2pc_islandbg.dcb9802c.jpg",
+      "img02_pc.7d57085e.png"
+    ]
+  },
+  "virtual:nuxt:/Users/jxes6102/Documents/code/hub/eventpage/petintroduction/.nuxt/error-component.mjs": {
+    "file": "error-component-4d34ca9a.mjs",
+    "src": "virtual:nuxt:/Users/jxes6102/Documents/code/hub/eventpage/petintroduction/.nuxt/error-component.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "dynamicImports": [
+      "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
+      "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-7a90c092.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/default.vue": {
+    "file": "default-b8c36ec5.mjs",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "css": [
+      "default.bb0892f5.css"
+    ],
+    "assets": [
+      "i_logo_m1.162c4c80.svg",
+      "i_logo_m2.84595a1b.svg",
+      "i_logo_gpg.9c0dd693.png",
+      "i_15plus.391f3e97.jpg"
+    ]
+  },
+  "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
+    "file": "error-404-3524e16b.mjs",
+    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "css": [
+      "error-404.314f7075.css"
+    ]
+  },
+  "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
+    "file": "error-500-39535432.mjs",
+    "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "css": [
+      "error-500.4e3461e5.css"
+    ]
+  }
+}
