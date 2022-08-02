@@ -10,7 +10,6 @@
 <script>
 export default {
   setup() {
-    console.log('test')
     return{
     }
   }
