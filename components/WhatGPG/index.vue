@@ -21,7 +21,7 @@
               <swiper-slide v-for="item of list" :key="item.id">
                 <div class="flex justify-center text-center py-2 md:py-9 flex-col md:flex-row">
                   <div class="flex-1 justify-center items-center">
-                    <img :src="`/_nuxt/${item.url}`" alt="" class="">
+                    <img :src="`../assets/${item.url}`" alt="" class="">
                   </div>
                   <div class="flex-1 flex items-center mt-32 mb-40 md:my-10">
                     <div class="h-auto p-2 absolute z-20 flex  flex-col text-left items-start ">
