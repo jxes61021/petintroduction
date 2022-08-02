@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "bundledDependencies": [
+    "ohmyfetch",
+    "node-fetch-native",
+    "source-map-support",
+    "unstorage",
+    "destr",
+    "scule",
+    "axios",
+    "ohash",
+    "h3",
+    "unenv",
+    "ufo",
+    "hookable",
+    "radix3",
+    "pathe",
+    "cookie-es",
+    "source-map",
+    "buffer-from",
+    "follow-redirects",
+    "form-data",
+    "debug",
+    "asynckit",
+    "mime-types",
+    "combined-stream",
+    "mime-db",
+    "delayed-stream",
+    "ms",
+    "supports-color",
+    "has-flag"
+  ]
+}
