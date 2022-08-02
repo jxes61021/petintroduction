@@ -1,11 +1,5 @@
 <template>
     <div class="relative bg-mogopet md:bg-gopet h-auto bg-cover text-white text-noto bg-top bg-no-repeat pb-[300px]">
-        <!-- <div class="bg-part103 w-full bg-cover h-[100px] md:h-[330px] relative -top-2">
-            <div class="w-11/12 hidden md:block">
-                <img src="./image/m2_250.png" alt="" class=" absolute right-20 bottom-0 ">
-            </div>
-        </div> -->
-        
         <div class="bg-partm2 w-full bg-cover h-[400px] md:h-[800px] absolute bottom-0 z-0"></div>
         <div class="w-full md:w-[800px] m-auto pb-18 md:pb-44 pt-16  relative top-0 z-1">
             <goSwiper />
@@ -40,11 +34,6 @@
                         <div class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 md:left-0" :class="item.style">
                             <p class="text-[22px] font-bold mb-4">{{ item.title }}</p>
                             <p class="mb-16">{{ item.message }}</p>
-                            <!-- <div class=" absolute bottom-0 w-full">
-                                <a class="px-8 border-2 py-2 rounded-full cursor-pointer font-black hover:-fuchsia-700">
-                                    了解更多
-                                </a>
-                            </div> -->
                         </div>
                     </swiper-slide>
                     <div class="w-full md:w-full h-auto flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]">
@@ -55,14 +44,6 @@
                         <img src="@/assets/right.png" alt="" class="">
                         </div>
                     </div>
-                    <!-- <div id="gopet" class="hidden md:block">
-                        <div class="swiper-button-next md:right-[43%] md:top-[82%]">
-                            <img src="./image/right.png" alt="" class="ml-2">
-                        </div>
-                        <div class="swiper-button-prev md:left-[43%] md:top-[82%] ">
-                            <img src="./image/left.png" alt="">
-                        </div>
-                    </div> -->
                 </swiper>
                 
             </div>

@@ -6,7 +6,7 @@ div(class='bg-[#1F1631] h-auto')
         img(src='./image/i_logo_gpg.png' alt='' class='w-4/12 md:w-auto mb-6 m-auto')
         div(class="flex flex-row justify-center")
           a(v-for='item of iconlist' :key='item.id' :href='item.href' target='_blank' class='w-[14%] mx-1')
-            img(:src="`../assets/${item.url}`")
+            img(:src="item.url")
     div(class='md:w-8/12 md:gap-1 md:pt-20 md:pb-14 md:text-left w-full text-white grid grid-cols-2 gap-6 pt-10 pb-10 text-center')
       a(v-for='item of hreflist' :key='item.id' :href='item.href')
         div {{item.title}}
@@ -20,6 +20,10 @@ div(class="bg-black h-auto pt-10 pb-10")
   div(class='text-[#ffffffa9] flex justify-center') &copy;2021 GOD PLAY GAME. All Rights Reserved.
 </template>
 <script>
+import img1 from '@/assets/btn_blank_line.png'
+import img2 from '@/assets/btn_blank_fb.png'
+import img3 from '@/assets/btn_blank_tw.png'
+import img4 from '@/assets/btn_blank_ig.png'
 export default {
   setup() {
     // const displayAwardView = inject('displayAwardView')
@@ -28,10 +32,10 @@ export default {
       displayAwardView.value = true
     }
     const iconlist = ref([
-      { id: 1, url: 'btn_blank_line.png', title: 'LINE', href: 'https://line.me/ti/p/@gpg.game' },
-      { id: 2, url: 'btn_blank_fb.png', title: 'Facebook', href: 'https://www.facebook.com/GodPlayGameFun' },
-      { id: 3, url: 'btn_blank_tw.png', title: 'twitter', href: 'https://twitter.com/GodGpg' },
-      { id: 4, url: 'btn_blank_ig.png', title: 'instagram', href: 'https://www.instagram.com/gpg.godplaygame/' },
+      { id: 1, url: img1, title: 'LINE', href: 'https://line.me/ti/p/@gpg.game' },
+      { id: 2, url: img2, title: 'Facebook', href: 'https://www.facebook.com/GodPlayGameFun' },
+      { id: 3, url: img3, title: 'twitter', href: 'https://twitter.com/GodGpg' },
+      { id: 4, url: img1, title: 'instagram', href: 'https://www.instagram.com/gpg.godplaygame/' },
     ])
     const hreflist= ref([
       { id: 1,title: 'TOP',href: '#header' },

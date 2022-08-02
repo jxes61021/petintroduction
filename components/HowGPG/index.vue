@@ -24,11 +24,6 @@
                                 <div class="flex-1 p-4 md:p-14 text-left">
                                     <div class="text-[30px] font-black mb-4 md:mb-10 w-10/12 md:w-full m-auto">STEP1</div>
                                     <div class="text-[15px] w-10/12 md:w-full mb-10 m-auto">登入《GPG神遊平台》https://godplay.app/前往GPG神遊平台首頁>輸入手機號碼驗證>輸入驗證碼完成註冊!</div>
-                                    <!-- <div class="btn-ani hover:transform hover:translate-x-6 w-10/12 md:w-full mb-10 m-auto">
-                                        <a class="text-black px-8 border-black border-2 py-2 rounded-full cursor-pointer font-black hover:-fuchsia-700 ">
-                                            馬上登入
-                                        </a>
-                                    </div> -->
                                 </div>
                             </div>
                         </swiper-slide>
@@ -40,23 +35,10 @@
                                 <div class="flex-1 p-4 md:p-14  text-left">
                                     <div class="text-[30px] font-black mb-4 md:mb-10 w-10/12 md:w-full m-auto">STEP2</div>
                                     <div class="text-[15px] w-10/12 md:w-full mb-10 m-auto">登入平台後，點選《GPG神遊礦寵》進入遊戲後，輸入手機號碼登入即註冊成功</div>
-                                    <!-- <div class="btn-ani hover:transform hover:translate-x-3 w-10/12 md:w-full mb-10 m-auto">
-                                        <a class="text-black px-8 border-black border-2 py-2 rounded-full cursor-pointer font-black hover:-fuchsia-700">
-                                            一鍵成為礦寵大師
-                                        </a>
-                                    </div> -->
                                 </div>
                             </div>
                         </swiper-slide>
                 </swiper>
-                <!-- <div id="howgpg">
-                  <div class="swiper-button-next btn-ani md:right-[40%] md:top-[90%] right-[32%] top-[98%]">
-                      <img src="@/assets/right.png" alt="" class="ml-2">
-                  </div>
-                  <div class="swiper-button-prev btn-ani md:left-[50%] md:top-[90%] left-[32%] top-[98%]">
-                      <img src="@/assets/left.png" alt="">
-                  </div>
-                </div> -->
                 <div class="w-full md:w-[60%] h-auto flex items-center justify-center md:justify-end bottom-[40px] md:bottom-[60px]">
                     <div class="prevArrow flex items-center justify-center">
                         <img src="@/assets/left.png" alt="">

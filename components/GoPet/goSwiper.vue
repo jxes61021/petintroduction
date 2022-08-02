@@ -19,11 +19,6 @@
                             <div class="mb-6">{{ item.message1 }}</div>
                             <div class="mb-6">{{ item.message2 }}</div>
                             <div class="mb-8">{{ item.message3 }}</div>
-                            <!-- <div class="flex justify-center pb-4 btn-ani">
-                                <a class="px-8 border-2 py-2 rounded-full cursor-pointer font-black hover:-fuchsia-700">
-                                    現在就去挖礦
-                                </a>
-                            </div> -->
                         </div>
                     </div>
                 </swiper-slide>
@@ -35,20 +30,6 @@
                         <img src="@/assets/right.png" alt="" class="">
                     </div>
                 </div>
-                <!-- <div class="prevArrow flex items-center justify-center md:left-[0%] top-[89%] md:top-[50%]">
-                    <img src="@/assets/left.png" alt="">
-                </div>
-                <div class="nextArrow flex items-center justify-center md:right-[-41%] top-[89%] md:top-[50%] right-[2%]">
-                    <img src="@/assets/right.png" alt="" class="">
-                </div> -->
-                <!-- <div id="goswiper">
-                    <div class="btn-ani swiper-button-next md:right-[41%] top-[89%] md:top-[50%] right-[2%]">
-                        <img src="@/assets/right.png" alt="" class="ml-2">
-                    </div>
-                    <div class="btn-ani swiper-button-prev md:left-[0%] top-[89%] md:top-[50%] ">
-                        <img src="@/assets/left.png" alt="">
-                    </div>
-                </div> -->
         </swiper>
        
 </template>

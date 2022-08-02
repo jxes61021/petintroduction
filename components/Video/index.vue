@@ -13,30 +13,6 @@
                 </div>
             </div>
        </div>
-       <!-- <div class="w-11/12 md:w-[1100px] m-auto bg-[#ffffffd6]  rounded-2xl h-auto p-6">
-         <p id="book" class="text-[40px] font-bold pb-2 flex justify-center">遊戲白皮書</p>
-         <div class="w-12/12 flex py-4 m-auto h-full text-white flex-col md:flex-row ">
-          <div class="w-full md:w-3/12 p-3">
-            <div class=" rounded-xl bg-[#754EC4]  h-28 md:h-full flex items-center justify-center">
-              遊戲概況
-            </div>
-          </div>
-          <div class="w-full md:w-10/12 p-3 grid grid-rows-6 md:grid-rows-3 grid-flow-col gap-3 cursor-pointer">
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center py-6">寵物介紹</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">道具</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">合成</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">挖礦</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">礦場</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">實體獎勵</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">虛擬寶物</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">商店</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">競拍</div>
-            <div class="bg-[#3A3551] rounded-lg flex justify-center items-center text-[#78719A]">NFT</div>
-            <div class="bg-[#754EC4] rounded-lg flex justify-center items-center">好友</div>
-            <div class="bg-[#3A3551] rounded-lg flex justify-center items-center text-[#78719A]">對戰競技</div>
-          </div>
-         </div>
-       </div> -->
     </div>
     <div class=" relative">
       <teleport to="body">

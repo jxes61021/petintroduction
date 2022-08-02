@@ -82,11 +82,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="w-full flex justify-center text-white">
-            <a class="px-8 border py-2 rounded-full cursor-pointer border-white  hover:-fuchsia-700">
-                點我集氣
-            </a> 
-        </div> -->
     </div>
   </div>
 </template>
