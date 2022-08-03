@@ -29,7 +29,7 @@ export default {
   setup() {
     const peopleCount = ref(null);
     onMounted(() => {
-      const baseUrl = 'http://' + (window.location.host.includes('ceis') ? 'a1-gpg.ceis.tw' : 'a1.godplay.app');
+      const baseUrl = 'https://' + (window.location.host.includes('ceis') ? 'a1-gpg.ceis.tw' : 'a1.godplay.app');
       axios.get(baseUrl + '/Activity/gather/SignInCount', {
           params: { ActivityId: 1 },
         })
