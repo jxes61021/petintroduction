@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     exposeConfig: true
   },
   build: {
-    transpile: ['swiper', '@nuxtjs/tailwindcss']
+    transpile: ['swiper']
   },
   app:{
     buildAssetsDir:'/nuxt/',
