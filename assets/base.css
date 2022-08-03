@@ -9,6 +9,12 @@
         @apply hover:scale-110 transition duration-300 ease-in-out 
     }
 }
+.swiper-button-disabled {
+  opacity: 0.6
+}
+.btn-shadow {
+  box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
+}
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #ffffff;

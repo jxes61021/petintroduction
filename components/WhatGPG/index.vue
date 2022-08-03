@@ -1,53 +1,34 @@
-<template>
-    <div class="w-11/12 md:w-[820px] m-auto pt-4 pb-4 z-10 relative">
-      <div class="w-full bg-white h-[730px] md:h-[560px] rounded-2xl m-auto text-noto">
-        <div id="menu-1" class="flex justify-center pt-10 text-[40px] font-black text-black">什麼是GPG礦寵</div>
-        <div class="relative w-full h-auto">
-          <div class="absolute w-full m-auto" > 
-            <swiper 
-                id="swiper1"
-                :autoplay="true"
-                :navigation="{
-                    nextEl: '.nextArrow',
-                    prevEl: '.prevArrow',}"
-                :pagination="{
-                    clickable: true,}"
-                :observer="true"
-                :observeParents="true"
-                :parallax="true"
-                :disabledClass="true"
-                class="mySwiper">
-              <swiper-slide v-for="item of list" :key="item.id">
-                <div class="flex justify-center text-center py-2 md:py-9 flex-col md:flex-row">
-                  <div class="flex-1 justify-center items-center">
-                    <img :src="item.url" alt="" class="">
-                  </div>
-                  <div class="flex-1 flex items-center mt-32 mb-40 md:my-10">
-                    <div class="h-auto p-2 absolute z-20 flex  flex-col text-left items-start ">
-                      <p class="mb-8 w-10/12 text-left m-auto text-black">{{ item.message }}</p>
-                    </div>
-                  </div>
-                </div>
-              </swiper-slide>
-              <div class="w-full md:w-[68%] h-auto flex items-center justify-center md:justify-end bottom-[12vh] md:bottom-[8vh]">
-                <div class="prevArrow flex items-center justify-center">
-                    <img src="@/assets/left.png" alt="">
-                </div>
-                <div class="nextArrow flex items-center justify-center ml-4 md:ml-8">
-                  <img src="@/assets/right.png" alt="" class="">
-                </div>
-              </div>
-
-            </swiper>
-          </div>
-          <div class="absolute w-full top-32  right-0 md:right-10">
-            <img src="./image/m2_101.png" alt="">
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
+<template lang="pug">
+div(class='m-auto pt-4 pb-4 z-10 relative w-11/12 md:w-[820px]')
+  div(class='w-full bg-white rounded-2xl m-auto text-noto h-[730px] md:h-[560px]')
+    #menu-1(class='flex justify-center pt-10 font-black text-black text-[40px]') 什麼是GPG礦寵
+    div(class="relative w-full h-auto")
+      div(class="absolute w-full m-auto")
+        swiper#swiper1.mySwiper(
+          :autoplay='true' 
+          :navigation="{\
+            nextEl: '.nextArrow',\
+            prevEl: '.prevArrow',}" 
+          :pagination='{\
+            clickable: true,}' 
+          :observer='true' 
+          :observeparents='true' 
+          :parallax='true' 
+          :disabledclass='true')
+          swiper-slide(v-for='item of list' :key='item.id')
+            div(class='flex justify-center text-center py-2 flex-col md:py-9 md:flex-row')
+              div(class="flex-1 justify-center items-center")
+                img(:src='item.url' alt='')
+              div(class='flex-1 flex items-center mt-32 mb-40 md:my-10')
+                div(class="h-auto p-2 absolute z-20 flex flex-col text-left items-start")
+                  p(class='mb-8 text-left m-auto text-black w-10/12') {{ item.message }}
+          div(class='w-full h-auto flex items-center justify-center md:w-[68%] md:justify-end bottom-[12vh] md:bottom-[8vh]')
+            div.prevArrow(class="flex items-center justify-center bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] shadow-btn")
+              img(src='@/assets/left.png' alt='')
+            div.nextArrow(class='flex items-center justify-center ml-4 md:ml-8 bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] shadow-btn')
+              img(src='@/assets/right.png' alt='')
+      div(class='absolute w-full top-32 right-0 md:right-10')
+        img(src='./image/m2_101.png' alt='')
 </template>
 <script>
 import SwiperCore, { Autoplay, Navigation } from 'swiper'
@@ -74,32 +55,8 @@ export default {
     return{
       Swiper,
       SwiperSlide,
-      SwiperCore,
       list,
     }
   }
 }
 </script>
-
-
-<style>
-.nextArrow {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-.prevArrow {
-    background: #8E3FE8;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 999px;
-    box-shadow: 2px 4px 2px 0px rgb(103, 6, 138);
-    z-index: 99;
-}
-.swiper-button-disabled {
-  opacity: 0.6
-}
-</style>
