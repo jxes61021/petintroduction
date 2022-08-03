@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['swiper', '@nuxtjs/tailwindcss']
   },
-  // app:{
-  //   baseURL:'./'
-  // }
+  app:{
+    buildAssetsDir:'https://jxes61021.github.io/petintroduction/_nuxt/',
+  }
 })
