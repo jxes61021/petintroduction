@@ -26,9 +26,6 @@ module.exports = {
       fontFamily: {
         noto:["Noto Sans TC", "sans-serif"],
       },
-      boxShadow: {
-        btn: '2px 4px 2px 0 rgb(103, 6, 138. 1)',
-      },
     },
   },
   // plugins: [
