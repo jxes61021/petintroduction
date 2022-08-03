@@ -13,5 +13,5 @@ export default defineNuxtConfig({
   app:{
     buildAssetsDir:'/nuxt/',
     cdnURL:'./',
-  }
+  },
 })
