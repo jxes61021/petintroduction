@@ -35,7 +35,7 @@ export default {
       { id: 1, url: img1, title: 'LINE', href: 'https://line.me/ti/p/@gpg.game' },
       { id: 2, url: img2, title: 'Facebook', href: 'https://www.facebook.com/GodPlayGameFun' },
       { id: 3, url: img3, title: 'twitter', href: 'https://twitter.com/GodGpg' },
-      { id: 4, url: img1, title: 'instagram', href: 'https://www.instagram.com/gpg.godplaygame/' },
+      { id: 4, url: img4, title: 'instagram', href: 'https://www.instagram.com/gpg.godplaygame/' },
     ])
     const hreflist= ref([
       { id: 1,title: 'TOP',href: '#header' },
