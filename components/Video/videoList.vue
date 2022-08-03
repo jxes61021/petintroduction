@@ -16,7 +16,3 @@ const displayAwardView = inject('displayAwardView')
               </div>
           </div>
 </template>
-
-<style>
-
-</style>

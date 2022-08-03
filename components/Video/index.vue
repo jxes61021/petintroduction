@@ -116,7 +116,7 @@ export default {
 };
 </script>
 
-<style>
+<style scope>
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity .46s ease;

@@ -237,7 +237,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 .nextArrow {
     background: #8E3FE8;
     width: 3.5rem;

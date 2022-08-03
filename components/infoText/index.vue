@@ -9,7 +9,7 @@
     </p>
 </div>
 </template>
-<style>
+<style scope>
 #scrollBox {
   display: flex;
   justify-content: center;
