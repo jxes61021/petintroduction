@@ -1,11 +1,3 @@
-<script setup>
-import { inject, ref } from "vue"
-const displayAwardView = inject('displayAwardView')
-
-
-
-</script>
-
 <template>
 <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 max-w-full bg-[#0000009d] h-full w-full flex justify-center items-center" v-if="isOpen">
               <div class="bg-white rounded-2xl p-[40px] min-w-[745px] h-[400px] relative">

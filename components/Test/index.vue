@@ -16,21 +16,6 @@
             </div>
         </div>
     </div>
-    <div class="bg-black h-auto pt-10 pb-10 ">
-        <div class="w-10/12 md:w-6/12 m-auto flex justify-center mb-16 flex-row ">
-            <div class="flex items-center md:mr-4 w-3/12 md:w-4/12 m-auto">
-                <img src="./image/i_15plus.png" alt="" class="m-auto w-full md:w-5/12">
-            </div>
-            <div class="flex flex-col text-[#ffffffa9] text-[12px] md:w-full w-8/12"> 
-                <div v-for="item of rulelist" :key="item.id">
-                    <p>{{item.message}}</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center text-[#ffffffa9]">
-            ©2021 GOD PLAY GAME. All Rights Reserved.
-        </div>
-    </div> 
 </template>
 <script>
 export default {

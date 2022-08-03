@@ -1,4 +1,5 @@
 <template>
+
     <div class="relative bg-videobg h-auto bg-contain bg-repeat text-noto bg-top py-32 font-noto">
        <div class="bg-part107 w-full h-[100px] absolute -top-2"></div>
        <div class="w-11/12 md:w-[1100px] m-auto bg-[#ffffffd6]  rounded-2xl mb-6">
@@ -46,7 +47,7 @@
         </transition>
       </teleport>
     </div>
-    <div class=" relative">
+    <div class="relative">
       <teleport to="body">
         <transition name="fade" v-for="item of list3" :key="item.id">
           <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-40 max-w-full bg-[#0000009d] h-full w-full flex justify-center items-center" v-if="isOpen3"   >

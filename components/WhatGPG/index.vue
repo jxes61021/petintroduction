@@ -7,8 +7,8 @@ div(class='m-auto pt-4 pb-4 z-10 relative w-11/12 md:w-[820px]')
         swiper#swiper1.mySwiper(
           :autoplay='true' 
           :navigation="{\
-            nextEl: '.nextArrow',\
-            prevEl: '.prevArrow',}" 
+            nextEl: '.nextArrows',\
+            prevEl: '.prevArrows',}" 
           :pagination='{\
             clickable: true,}' 
           :observer='true' 
@@ -23,9 +23,9 @@ div(class='m-auto pt-4 pb-4 z-10 relative w-11/12 md:w-[820px]')
                 div(class="h-auto p-2 absolute z-20 flex flex-col text-left items-start")
                   p(class='mb-8 text-left m-auto text-black w-10/12') {{ item.message }}
           div(class='w-full h-auto flex items-center justify-center md:w-[68%] md:justify-end bottom-[12vh] md:bottom-[8vh]')
-            div.prevArrow(class="flex items-center justify-center bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] shadow-btn")
+            .prevArrows(class="flex items-center justify-center bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
               img(src='@/assets/left.png' alt='')
-            div.nextArrow(class='flex items-center justify-center ml-4 md:ml-8 bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] shadow-btn')
+            .nextArrows(class='flex items-center justify-center ml-4 md:ml-8 bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow')
               img(src='@/assets/right.png' alt='')
       div(class='absolute w-full top-32 right-0 md:right-10')
         img(src='./image/m2_101.png' alt='')
