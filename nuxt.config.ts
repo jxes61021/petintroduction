@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     transpile: ['swiper']
   },
   app:{
-    // buildAssetsDir:'/nuxt/',
+    buildAssetsDir:'/nuxt/',
     cdnURL:'./',
   },
 })
