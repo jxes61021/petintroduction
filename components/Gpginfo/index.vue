@@ -103,7 +103,7 @@
                                 >
                                 <div class="p-0 md:p-10 h-full w-full flex flex-col md:flex-row">
                                     <div class="flex-1 flex justify-center">
-                                        <img :src="`../assets/${item.url}`" alt="" class="w-full md:w-11/12 m-auto">
+                                        <img :src="item.url" alt="" class="w-full md:w-11/12 m-auto">
                                     </div>
                                     <div class="flex-1 p-0 md:p-4 flex justify-center flex-col">
                                         <div class="text-[22px] font-bold mb-4">{{ item.title }}</div>
