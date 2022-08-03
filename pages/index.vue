@@ -5,5 +5,4 @@ div
   Gpginfo
   Roadmap
   Video
-  //- p(class="text-red-400") 456
 </template>
