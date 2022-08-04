@@ -25,7 +25,7 @@ div(class="relative py-2 md:py-0 bg-white text-black")
             div(class="w-full md:w-[60%] h-auto flex items-center justify-center md:justify-end bottom-[40px] md:bottom-[60px]")
                 .prevArrows(class="flex items-center justify-center bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
                     img(src='@/assets/left.png' alt='')
-                .nextArrows(class='flex items-center justify-center ml-2 md:ml-4 bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow')
+                .nextArrows(class='flex items-center justify-center ml-4 bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow')
                     img(src='@/assets/right.png' alt='')
 </template>
 <script>
