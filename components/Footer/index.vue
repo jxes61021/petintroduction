@@ -20,10 +20,10 @@ div(class="bg-black h-auto pt-10 pb-10")
   div(class='text-[#ffffffa9] flex justify-center') &copy;2021 GOD PLAY GAME. All Rights Reserved.
 </template>
 <script>
-import img1 from '@/assets/btn_blank_line.png'
-import img2 from '@/assets/btn_blank_fb.png'
-import img3 from '@/assets/btn_blank_tw.png'
-import img4 from '@/assets/btn_blank_ig.png'
+import img1 from './image/btn_blank_line.png'
+import img2 from './image/btn_blank_fb.png'
+import img3 from './image/btn_blank_tw.png'
+import img4 from './image/btn_blank_ig.png'
 export default {
   setup() {
     // const displayAwardView = inject('displayAwardView')

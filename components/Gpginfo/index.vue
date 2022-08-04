@@ -134,17 +134,17 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import "swiper/css/navigation"
 SwiperCore.use([Autoplay, Navigation])
-import img1 from '@/assets/m2_306.jpg'
-import img2 from '@/assets/m2_307.jpg'
-import img3 from '@/assets/m2_308.jpg'
-import img4 from '@/assets/m2_309.jpg'
-import img5 from '@/assets/m2_310.jpg'
-import img6 from '@/assets/m2_321.jpg'
-import img7 from '@/assets/m2_322.jpg'
-import img8 from '@/assets/m2_323.jpg'
-import img9 from '@/assets/m2_324.jpg'
-import img10 from '@/assets/m2_325.jpg'
-import img11 from '@/assets/m2_326.jpg'
+import img1 from './image/m2_306.jpg'
+import img2 from './image/m2_307.jpg'
+import img3 from './image/m2_308.jpg'
+import img4 from './image/m2_309.jpg'
+import img5 from './image/m2_310.jpg'
+import img6 from './image/m2_321.jpg'
+import img7 from './image/m2_322.jpg'
+import img8 from './image/m2_323.jpg'
+import img9 from './image/m2_324.jpg'
+import img10 from './image/m2_325.jpg'
+import img11 from './image/m2_326.jpg'
 export default {
   components: {
     Swiper,

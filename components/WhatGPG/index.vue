@@ -35,10 +35,10 @@ import SwiperCore, { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import "swiper/css/navigation"
-import img1 from '@/assets/m2_102.png'
-import img2 from '@/assets/m2_103.png'
-import img3 from '@/assets/m2_104.png'
-import img4 from '@/assets/m2_105.png'
+import img1 from './image/m2_102.png'
+import img2 from './image/m2_103.png'
+import img3 from './image/m2_104.png'
+import img4 from './image/m2_105.png'
 SwiperCore.use([Autoplay, Navigation])
 export default {
   components: {
