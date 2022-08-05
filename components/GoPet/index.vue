@@ -24,7 +24,7 @@ div(class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]")
                 div(:class="item.style" class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 md:left-0" )
                     p(class="text-[22px] font-bold mb-4") {{ item.title }}
                     p(class="mb-16") {{ item.message }}
-            div(class="w-full md:w-full h-auto flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]")
+            div(class="w-full md:w-full h-auto hidden md:flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]")
                 .prevArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center")
                     img(src="@/assets/left.png" alt="")
                 .nextArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center ml-6")

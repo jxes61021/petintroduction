@@ -1,6 +1,6 @@
 <template lang="pug">
 div(class="flex flex-col items-center justify-center overflow-hidden text-center text-white font-noto pb-4")
-  div(v-for='(item, index) of message' :key="index" :class="item.isTitle ? 'text-4xl my-4 font-bold' : ''") {{item.text}}
+  div(v-for='(item, index) of message' :key="index" :class="item.isTitle ? 'text-4xl my-4 font-bold ' : 'text-base'") {{item.text}}
 </template>
 <script>
 export default {

@@ -12,12 +12,12 @@ div
       //- Mobile Menu open: "block", Menu closed: "hidden"
       ul(:class="showMenu ? 'flex top-[20vh] h-[80vh]' : 'hidden'" 
         class="pt-[8rem] md:pt-0 bg-black items-center flex-col mt-[-7rem] space-y-4 text-lg cursor-pointer md:flex md:space-y-0 md:flex-row md:items-center md:space-x-14 md:mt-0 md:bg-[#00000009] md:h-auto")
-        li(v-for="(item, index) of data" class="text-gray-100 hover:text-[#7135E9]")
+        li(v-for="(item, index) of data" class="hover:text-[#7135E9]")
           div(@click="action(index)") {{item}}
       //- Mobile Menu open: "hidden", Menu closed: "block"
       ul(:class="showMenu ? 'flex' : 'hidden'" 
         class="flex-col mt-8 mr-4 space-y-4 text-lg cursor-pointer md:flex md:space-y-0 md:flex-row md:items-center md:space-x-6 md:mt-0")
-        li(class="hidden md:block text-gray-100 px-8 bg-[#7135E9] py-2 rounded-full hover:text-indigo-400")
+        li(class="hidden md:block text-white px-8 bg-[#7135E9] py-2 rounded-full hover:text-indigo-400")
           a(href="/") PLAY NOW
 </template>
 <script>
