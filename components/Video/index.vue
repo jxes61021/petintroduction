@@ -23,11 +23,6 @@ import img2 from './image/m2_403.png'
 import img3 from './image/m2_405.png'
 export default {
   setup() {
-    // const displayAwardView = inject('displayAwardView')
-    const displayAwardView = ref(false)
-    const actionAward = () => {
-      displayAwardView.value = true
-    }
     const openID = ref(0)
     const list = ref([
       { id: 1, 
@@ -51,7 +46,6 @@ export default {
   },
 };
 </script>
-
 <style scope>
 .fade-enter-active,
 .fade-leave-active {
