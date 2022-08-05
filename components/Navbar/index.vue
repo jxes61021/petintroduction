@@ -13,7 +13,7 @@ div
       ul(:class="showMenu ? 'flex top-[20vh] h-[80vh]' : 'hidden'" 
         class="pt-[8rem] md:pt-0 bg-black items-center flex-col mt-[-7rem] space-y-4 text-lg cursor-pointer md:flex md:space-y-0 md:flex-row md:items-center md:space-x-14 md:mt-0 md:bg-[#00000009] md:h-auto")
         li(v-for="(item, index) of data" class="text-gray-100 hover:text-[#7135E9]")
-          a(:href="'#menu-' + (index + 1)") {{item}}
+          div(@click="action(index)") {{item}}
       //- Mobile Menu open: "hidden", Menu closed: "block"
       ul(:class="showMenu ? 'flex' : 'hidden'" 
         class="flex-col mt-8 mr-4 space-y-4 text-lg cursor-pointer md:flex md:space-y-0 md:flex-row md:items-center md:space-x-6 md:mt-0")
@@ -31,9 +31,16 @@ export default {
       '遊戲特色',
       '預約登錄'
     ])
+
+    const action = (val) => {
+      if (val >= data.value.length) return false
+      const el = document.getElementById('menu-' + (val + 1))
+      el.scrollIntoView({behavior: "smooth"})
+    }
     return { 
       showMenu,
-      data 
+      data,
+      action,
     };
   },
 };
