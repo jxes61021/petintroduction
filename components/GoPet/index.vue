@@ -1,8 +1,4 @@
 <template lang="pug">
-div(class="relative bg-mogopet md:bg-gopet h-auto bg-cover text-white text-noto bg-top bg-no-repeat pb-[300px]")
-    div(class="bg-partm2 w-full bg-cover h-[400px] md:h-[800px] absolute bottom-0 z-0")
-    div(class="w-full md:w-[800px] m-auto pb-18 md:pb-44 pt-16  relative top-0 z-1")
-        goSwiper
 div(class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]")
     div(class="w-full md:w-[1220px] m-auto text-center text-black bg-[#F2EBF2]")
         div(id="menu-3" class="flex justify-center text-[40px] font-black mb-8") 如何賺更多？
@@ -40,12 +36,10 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 import "swiper/css/navigation"
 SwiperCore.use([Autoplay, Navigation])
-import goSwiper from './goSwiper.vue';
 export default {
   components: {
     Swiper,
     SwiperSlide,
-    goSwiper,
   },
   setup() {
     const list = ref([
@@ -66,7 +60,6 @@ export default {
     return{
       Swiper,
       SwiperSlide,
-      goSwiper,
       list,
     }
   }

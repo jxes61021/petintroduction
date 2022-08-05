@@ -11,5 +11,6 @@ div(class="bg-[#F2EBF2]")
   HowGPG
   div(class="bg-part103 w-full bg-cover h-[100px] md:h-[330px] bg-[#3577DE] flex justify-end")
     img(src="./image/m2_250.png" alt="" class="w-[472px] h-[439px] z-10 bottom-[15vh] right-[80px] hidden md:block")
+  ItemIntroduce
   GoPet
 </template>
