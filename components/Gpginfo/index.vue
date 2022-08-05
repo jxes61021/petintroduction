@@ -3,67 +3,48 @@ div(class="bg-gpginfo h-auto md:h-[850px] bg-cover relative pb-36 md:pb-0 text-b
     div(class="w-10/12 md:w-full justify-center text-center m-auto")
         div(id="menu-4" class="text-[40px] mb-10 font-bold") GPG神遊礦寵
     div(class="w-full md:w-[900px] m-auto justify-center font-noto relative")
-        ul(class="bg-[#251848] w-11/12 md:w-4/12 m-auto rounded-full justify-center nav nav-tabs flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6" id="tabs-tab3")
+        ul(class="bg-[#251848] w-11/12 md:w-4/12 m-auto rounded-full justify-center nav flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6")
             li(class="flex-1" @click="changeStatus(true)")
                 a(:class="SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold' : 'text-[#AE89D8]'"
                    class="text-center w-11/12 rounded-full m-auto block leading-tight text-[22px] px-5 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent" 
-                   id="tabs-home-tab3") 特色介紹
+                ) 特色介紹
             li(class="flex-1" @click="changeStatus(false)")
                 a(:class="!SwiperStatus ? 'bg-gradient-to-r from-[#6E4EF2] to-[#FF4060] text-white font-bold ' : 'text-[#AE89D8] '"
                     class="text-center w-11/12 rounded-full m-auto block font-medium text-[22px] leading-tight px-5 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
-                    id="tabs-profile-tab3"
                 ) 遊戲系統
-        div(class="tab-content relative" id="tabs-tabContent3")
-            //- 特色介紹
-            div(v-if="SwiperStatus" class="w-[95%] md:w-11/12 m-auto" id="tabs-home3" role="tabpanel" aria-labelledby="tabs-home-tab3")
-                div(class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4")
-                    .prevArrows(class="absolute flex items-center justify-center top-1/2 left-[-2%] md:left-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
-                        img(src="@/assets/left.png" alt="")
-                    swiper(:navigation="{\
-                            nextEl: '.nextArrows',\
-                            prevEl: '.prevArrows',}"
-                        :pagination="{\
-                            clickable: true,}"
-                        :observer="true"
-                        :observeParents="true"
-                        :parallax="true"
-                        :disabledclass='true')
-                        swiper-slide(v-for="item of list" :key="item.id")
-                            div(class="p-0 md:p-10 h-full w-full flex flex-col md:flex-row")
-                                div(class="flex-1 flex justify-center")
-                                    img(:src="item.url" alt="" class="w-full md:w-11/12 m-auto")
-                                div(class="flex-1 p-0 md:p-4 flex justify-center flex-col")
-                                    div(class="text-[22px] font-bold mb-4") {{ item.title }}
-                                    div(class="text-[15px] mb-14") {{ item.message }}
-                    .nextArrows(class="absolute flex items-center justify-center top-1/2 right-[-2%] md:right-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
-                        img(src="@/assets/right.png" alt="" class="")
-            //- 遊戲系統
-            div(v-else class="w-[95%] md:w-11/12 m-auto" id="tabs-profile3" role="tabpanel" aria-labelledby="tabs-profile-tab3")
-                div(class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4")
-                    .prevArrows(class="absolute flex items-center justify-center top-1/2 left-[-2%] md:left-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
-                        img(src="@/assets/left.png" alt="")                     
-                    swiper(
-                        :navigation="{\
-                            nextEl: '.nextArrows',\
-                            prevEl: '.prevArrows',}"
-                        :pagination="{\
-                            clickable: true,}"
-                        :observer="true"
-                        :observeParents="true"
-                        :parallax="true"
-                        :disabledclass='true'
-                        class="mySwiper")
-                        swiper-slide(v-for="item of list2" :key="item.id")
-                            div(class="p-0 md:p-10 h-full w-full flex flex-col md:flex-row")
-                                div(class="flex-1 flex justify-center")
-                                    img(:src="item.url" alt="" class="w-full md:w-11/12 m-auto")
-                                div(class="flex-1 p-0 md:p-4 flex justify-center flex-col")
-                                    div(class="text-[22px] font-bold mb-4") {{ item.title }}
-                                    div(class="text-[15px] mb-14") {{ item.message }}
-                                    div(class="w-full mb-10 md:mb-0 flex justify-center md:justify-start")
-                                        a(class="px-8 border py-2 rounded-full cursor-pointer border-black  hover:-fuchsia-700" :href="item.href") 立即遊玩
-                    .nextArrows(class="absolute flex items-center justify-center top-1/2 right-[-2%] md:right-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
-                        img(src="@/assets/right.png" alt="" class="")
+        transition(name="game")
+            div(class="relative" v-if="transitionStatus")
+                div(class="w-[95%] md:w-11/12 m-auto")
+                    div(class="md:w-auto m-auto bg-white h-auto md:h-[500px] rounded-2xl flex p-10 md:p-4")
+                        .prevArrows(class="absolute flex items-center justify-center top-[45%] left-[-2%] md:left-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
+                            img(src="@/assets/left.png" alt="")
+                        swiper(:navigation="{\
+                                nextEl: '.nextArrows',\
+                                prevEl: '.prevArrows',}"
+                            :pagination="{\
+                                clickable: true,}"
+                            :observer="true"
+                            :observeParents="true"
+                            :parallax="true"
+                            :disabledclass='true')
+                            swiper-slide(v-if="SwiperStatus" v-for="item of list" :key="item.id")
+                                div(class="p-0 md:p-10 h-full w-full flex flex-col md:flex-row")
+                                    div(class="flex-1 flex justify-center")
+                                        img(:src="item.url" alt="" class="w-full md:w-11/12 m-auto")
+                                    div(class="flex-1 p-0 md:p-4 flex justify-center flex-col")
+                                        div(class="text-[22px] font-bold mb-4") {{ item.title }}
+                                        div(class="text-[15px] mb-14") {{ item.message }}
+                            swiper-slide(v-else v-for="item of list2" :key="item.id")
+                                div(class="p-0 md:p-10 h-full w-full flex flex-col md:flex-row")
+                                    div(class="flex-1 flex justify-center")
+                                        img(:src="item.url" alt="" class="w-full md:w-11/12 m-auto")
+                                    div(class="flex-1 p-0 md:p-4 flex justify-center flex-col")
+                                        div(class="text-[22px] font-bold mb-4") {{ item.title }}
+                                        div(class="text-[15px] mb-14") {{ item.message }}
+                                        div(class="w-full mb-10 md:mb-0 flex justify-center md:justify-start")
+                                            a(class="px-8 border py-2 rounded-full cursor-pointer border-black  hover:-fuchsia-700" :href="item.href") 立即遊玩
+                        .nextArrows(class="absolute flex items-center justify-center top-[45%] right-[-2%] md:right-[-3%] bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow")
+                            img(src="@/assets/right.png" alt="" class="")
     div(class="bg-part106 w-full h-[100px] absolute -bottom-2 bg-no-repeat bg-cover")
 </template>
 <script>
@@ -89,10 +70,15 @@ export default {
     SwiperSlide,
   },
   setup() {
+    const transitionStatus = ref(true)
     const SwiperStatus = ref(true)
     const changeStatus = (status) => {
+        if(SwiperStatus.value === status) return false
         SwiperStatus.value = status
+        transitionStatus.value = false
+        setTimeout(() => {transitionStatus.value = true}, 200);
     }
+    
     const list = ref([
         {
             id: 1,  message: '蒐集到了各種NFT礦寵後，除了自己培養、收藏、挖礦以外，還能做什麼呢？遊戲內有競拍系統，除了能進行道具競拍以外，你心愛的NFT礦寵也能在遊戲內進行買賣和交易喔！',
@@ -169,7 +155,16 @@ export default {
       list2,
       SwiperStatus,
       changeStatus,
+      transitionStatus,
     }
   }
 }
 </script>
+<style scoped>
+.game-enter-active, .game-leave-active {
+  transition: opacity .5s;
+}
+.game-enter, .game-leave-to {
+  opacity: 0;
+}
+</style>
