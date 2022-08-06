@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="relative bg-mogopet md:bg-gopet h-auto bg-cover text-white text-noto bg-top bg-no-repeat pb-[300px]")
     div(class="bg-partm2 w-full bg-cover h-[400px] md:h-[800px] absolute bottom-0 z-0")
-    div(class="w-full md:w-[800px] m-auto pb-18 md:pb-44 pt-16  relative top-0 z-1")
+    div(class="w-full md:w-[800px] m-auto pb-18 md:pb-44 pt-16 relative top-0 z-1")
         div(class="text-[40px] font-black mb-4 ml-0 md:ml-20 text-center md:text-left") 挖了可以幹嘛
         swiper(
             :navigation="{\
@@ -16,7 +16,7 @@ div(class="relative bg-mogopet md:bg-gopet h-auto bg-cover text-white text-noto 
             class="relative pd-0 md:p-6"
             )
                 swiper-slide(v-for="item of data" :key="item.id")
-                    div(class="bg-[#005cd471] w-10/12 md:w-5/12 h-full px-6 pt-6 pb-8 rounded-xl  relative md:left-[68px] m-auto md:m-0 flex flex-col")
+                    div(class="bg-[#005cd471] w-10/12 md:w-5/12 h-full px-8 pt-6 pb-8 rounded-xl  relative md:left-[68px] m-auto md:m-0 flex flex-col")
                         div(class="text-[22px] mb-6 font-black pt-4") {{ item.title }}
                         div(v-for="text of item.message" class="mb-6") {{ text }}
                 div(class="w-full md:w-7/12 h-auto flex items-center justify-between md:justify-between bottom-[70px] md:bottom-[210px]")

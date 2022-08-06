@@ -7,7 +7,7 @@ div(class='bg-[#1F1631] h-auto')
         div(class="flex flex-row justify-center")
           a(v-for='item of iconlist' :key='item.id' :href='item.href' target='_blank' class='w-[14%] mx-1')
             img(:src="item.url")
-    div(class='md:w-8/12 md:gap-1 md:pt-20 md:pb-14 md:text-left w-full text-white grid grid-cols-2 gap-6 pt-10 pb-10 text-center')
+    div(class='text-lg md:w-8/12 md:gap-1 md:pt-20 md:pb-14 md:text-left w-full text-white grid grid-cols-2 gap-6 pt-10 pb-10 text-center')
       div(v-for='item of hreflist' :key='item.id' @click="action(item)") {{item.title}}
 div(class="bg-black h-auto pt-10 pb-10")
   div(class='w-10/12 md:w-6/12 m-auto flex justify-center mb-16 flex-row')
