@@ -13,4 +13,5 @@ div(class="bg-[#F2EBF2]")
     img(src="./image/m2_250.png" alt="" class="w-[472px] h-[439px] z-10 bottom-[15vh] right-[80px] hidden md:block")
   ItemIntroduce
   GoPet
+  //- Test
 </template>

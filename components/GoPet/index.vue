@@ -2,33 +2,35 @@
 div(class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]")
     div(class="w-full md:w-[1220px] m-auto text-center text-black bg-[#F2EBF2]")
         div(id="menu-3" class="flex justify-center text-[40px] font-black mb-8") 如何賺更多？
-    div(class="flex justify-center w-11/12 md:w-10/12 m-auto ")
-        //- when window width is >= 640px
-        swiper(
-            :slidesPerView="1"
-            :breakpoints="{\
-                640: {slidesPerView: 3,}\
-            }"
-            :spaceBetween="30"
-            :navigation="{\
-                nextEl: '.nextArrows',\
-                prevEl: '.prevArrows',}"
-            :pagination="{\
-                clickable: true,}"
-            :observer="true"
-            :observeParents="true"
-            :parallax="true"
-            class="relative p-6"
-        )
-            swiper-slide(v-for="item of list" :key="item.id")
-                div(:class="item.style" class="h-[70%] relative rounded-2xl flex-col p-10 text-white mb-24 md:left-0" )
-                    p(class="text-[22px] font-bold mb-4") {{ item.title }}
-                    p(class="mb-16") {{ item.message }}
-            div(class="w-full md:w-full h-auto hidden md:flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]")
-                .prevArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center")
-                    img(src="@/assets/left.png" alt="")
-                .nextArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center ml-6")
-                    img(src="@/assets/right.png" alt="" class="")
+        div(class="flex justify-center w-11/12 md:w-10/12 m-auto ")
+            //- when window width is >= 640px
+            swiper(
+                :slidesPerView="1"
+                :breakpoints="{\
+                    640: {slidesPerView: 3,}\
+                }"
+                :spaceBetween="30"
+                :navigation="{\
+                    nextEl: '.nextArrows',\
+                    prevEl: '.prevArrows',}"
+                :pagination="{\
+                    clickable: true,}"
+                :observer="true"
+                :observeParents="true"
+                :parallax="true"
+                class="relative p-6"
+            )
+                swiper-slide(
+                    v-for="item of list" :key="item.id"
+                )
+                    div(:class="item.style" class="h-[65%] w-full left-0 relative rounded-2xl flex-col p-10 text-white mb-24" )
+                        p(class="text-[22px] text-center font-bold mb-4") {{ item.title }}
+                        p(class="mb-16 text-center") {{ item.message }}
+                div(class="w-full md:w-full h-auto hidden md:flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]")
+                    .prevArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center")
+                        img(src="@/assets/left.png" alt="")
+                    .nextArrows(class="bg-[#8E3FE8] w-14 h-14 rounded-full z-[99] btn-shadow flex items-center justify-center ml-6")
+                        img(src="@/assets/right.png" alt="" class="")
 </template>
 <script>
 import SwiperCore, { Autoplay, Navigation } from 'swiper'
