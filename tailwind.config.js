@@ -25,10 +25,8 @@ module.exports = {
       },
       fontFamily: {
         noto:["Noto Sans TC", "sans-serif"],
+        Rampart: ["Rampart One", "cursive"],
       },
     },
   },
-  // plugins: [
-  //   require('tw-elements/dist/plugin')
-  // ],
 }

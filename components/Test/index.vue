@@ -1,57 +1,7 @@
 <template>
-    <div class="w-full h-[600px] relative -top-52">
-         <div class="w-full md:w-[1220px] m-auto text-center ">
-            <div id="menu-3" class="flex justify-center text-[40px] font-black mb-8">如何賺更多？</div>
-            <div class="flex justify-center w-11/12 m-auto ">
-                <swiper
-                :slidesPerView="1"
-                :breakpoints="{
-                    // when window width is >= 640px
-                    640: {
-                    slidesPerView: 3,
-                    }
-                }"
-                :spaceBetween="30"
-                :navigation="{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',}"
-                :pagination="{
-                clickable: true,}"
-                :observer=true
-                :observeParents= true
-                :parallax=true
-                :modules="modules"
-                class="mySwiper relative p-6"
-                >
-                    <swiper-slide
-                        v-for="item of list" :key="item.id"
-                        class="flex rounded-2xl h-auto flex-col p-10  text-white mb-24 relative md:left-0"
-                        :class="item.style"
-                    >
-                        <div class="h-full relative ">
-                            <p class="text-[22px] font-bold mb-4">{{ item.title }}</p>
-                            <p class="mb-16">{{ item.message }}</p>
-                            <!-- <div class=" absolute bottom-0 w-full">
-                                <a class="px-8 border-2 py-2 rounded-full cursor-pointer font-black hover:-fuchsia-700">
-                                    了解更多
-                                </a>
-                            </div> -->
-                        </div>
-                    </swiper-slide>
-                    <div id="gopet" class="hidden md:block">
-                        <div class="swiper-button-next md:right-[43%] md:top-[82%]">
-                            <img src="./image/right.png" alt="" class="ml-2">
-                        </div>
-                        <div class="swiper-button-prev md:left-[43%] md:top-[82%] ">
-                            <img src="./image/left.png" alt="">
-                        </div>
-                    </div>
-                </swiper>
-                
-            </div>
-            
-        </div>
-    </div>
+<p class="text-[50px]">123qwe狗狗遊戲內皆為虛擬情節，請勿任意模仿</p>
+<p class="text-[50px] font-noto">123qwe狗狗遊戲內皆為虛擬情節，請勿任意模仿</p>
+<p class="text-[50px] font-Rampart">123qwe狗狗遊戲內皆為虛擬情節，請勿任意模仿</p>
 </template>
 <script>
 import SwiperCore, { Autoplay, Navigation } from 'swiper'

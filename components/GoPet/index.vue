@@ -23,7 +23,7 @@ div(class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]")
                 swiper-slide(
                     v-for="item of list" :key="item.id"
                 )
-                    div(:class="item.style" class="h-[65%] w-full left-0 relative rounded-2xl flex-col p-10 text-white mb-24" )
+                    div(:class="item.style" class="h-[65%] w-[90%] left-[5%] md:w-full md:left-0 relative rounded-2xl flex-col p-10 text-white mb-24" )
                         p(class="text-[22px] text-center font-bold mb-4") {{ item.title }}
                         p(class="mb-16 text-center") {{ item.message }}
                 div(class="w-full md:w-full h-auto hidden md:flex items-center justify-center md:justify-center bottom-[12vh] md:bottom-[110px]")
