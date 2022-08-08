@@ -25,6 +25,7 @@ module.exports = {
       },
       fontFamily: {
         noto:["Noto Sans TC", "sans-serif"],
+        // noto:["Rampart One", "cursive"],
         Rampart: ["Rampart One", "cursive"],
       },
     },

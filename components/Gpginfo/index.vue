@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="bg-gpginfo h-auto md:h-[850px] bg-cover relative pb-36 md:pb-0 text-black")
     div(class="w-10/12 md:w-full justify-center text-center m-auto")
-        div(id="menu-4" class="text-[40px] mb-10 font-bold") GPG神遊礦寵
+        #menu-4(class="text-[40px] mb-10 font-bold") GPG神遊礦寵
     div(class="w-full md:w-[900px] m-auto justify-center font-noto relative")
         ul(class="bg-[#251848] w-11/12 md:w-4/12 m-auto rounded-full justify-center nav flex flex-row md:flex-row flex-wrap list-none border-b-0 pl-0 mb-6")
             li(class="flex-1" @click="changeStatus(true)")

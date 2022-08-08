@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="w-full h-[600px] relative -top-52 bg-[#F2EBF2]")
     div(class="w-full md:w-[1220px] m-auto text-center text-black bg-[#F2EBF2]")
-        div(id="menu-3" class="flex justify-center text-[40px] font-black mb-8") 如何賺更多？
+        #menu-3(class="flex justify-center text-[40px] font-black mb-8") 如何賺更多？
         div(class="flex justify-center w-11/12 md:w-10/12 m-auto ")
             //- when window width is >= 640px
             swiper(

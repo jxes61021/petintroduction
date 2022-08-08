@@ -1,7 +1,7 @@
 <template lang="pug">
 div(class="relative py-2 md:py-0 bg-white text-black")
     div(class="w-11/12 md:w-[1220px] m-auto text-center pt-6 md:pt-0")
-        div(id="menu-5" class="flex justify-center text-[40px] font-black mb-4") 如何取得GPG礦寵
+        #menu-5(class="flex justify-center text-[40px] font-black mb-4") 如何取得GPG礦寵
         div(class="text-center text-[22px] m-auto font-semibold mb-10") 礦寵怎麼玩:成為寵物大師
         div(class="h-auto relative")
             swiper(
